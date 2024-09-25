@@ -28,7 +28,7 @@ jobs:
              git clone https://github.com/llvm/llvm-project.git --depth 1
              mkdir llvm-project/llvm/build
              cd llvm-project/llvm/build
-             cmake .. -DCMAKE_INSTALL_PREFIX=/data/data/com.termux/files/usr
+             cmake .. -DCMAKE_INSTALL_PREFIX=/data/data/com.termux/files/usr -DCMAKE_BUILD_TYPE=Release
              make -j8
              cd -
              tar -rf llvm.tar llvm-project
