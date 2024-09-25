@@ -24,7 +24,7 @@ jobs:
           arch: aarch64
           distro: ubuntu22.04
           run: |
-            apt update && apt install clang cmake -y
+            apt update && apt install clang cmake git -y
              git clone https://github.com/llvm/llvm-project.git --depth 1
              mkdir llvm-project/llvm/build
              cd llvm-project/llvm/build
